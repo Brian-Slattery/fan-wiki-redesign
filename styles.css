@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html,
+  body {
+    height: 9000px;
+    margin: 0;
+    padding: 0;
+  }
+
+#topPanel{
+   display: flex;
+   height: 100px;
+   width: auto;
+   background-color: rgb(23, 23, 23);
+   justify-content: flex-start;
+   position: sticky;
+   top:0px; 
+   box-shadow: 0 0 10px 5px black;
+}
+
+#homelink{
+    height: 100%;
+}
+
+#logo{
+    padding: 10px;
+    height: 100px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 2px solid yellow;
+    transition: filter 0.3s ease;
+}
+
+#logo:hover{
+    filter: drop-shadow(0 0 5px yellow);
+}
+
+#search{
+    height: 50px;
+    font-size: 20px;
+    width: 600px;
+    margin: auto;
+    color: yellow;
+    background-color: rgb(10, 10, 10);
+    border: 2px solid yellow;
+    border-radius: 15px;
+}
+
+#search::placeholder{
+    color: yellow;
+    text-align: center;
+}
+
+#charactersDropdown{
+    border-left: 2px solid yellow;
+    width: 200px;
+}
+
+#mediaDropdown{
+    width: 200px;
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+}
+
+#characterButton{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(23, 23, 23);
+    color: yellow;
+}
+
+#mediaButton{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(23, 23, 23);
+    color: yellow;
+}
+#characterOptions{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+#characterOptions a {
+    color-scheme: yellow;
+    display: block;
+    text-decoration: none;
+}
+
+#charactersDropdown:hover #characterOptions{
+    display: block;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.dropdownCharacterOption{
+    color: yellow;
+    text-decoration:none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.dropdownCharacterOption:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+#mediaOptions{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+#mediaOptions a {
+    color-scheme: yellow;
+    display: block;
+    text-decoration: none;
+}
+
+#mediaDropdown:hover #mediaOptions{
+    display: block;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.dropdownMediaOption{
+    color: yellow;
+    text-decoration:none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.dropdownMediaOption:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+@media (max-width:800px){
+    #search {
+        width: 200px;
+    }
+}
