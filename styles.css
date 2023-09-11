@@ -15,28 +15,37 @@ html {
     padding: 0;
   }
 
+/**background**/
+body{
+    background-image:url(/photos/wall.jpg);
+    background-size:50%;
+
+}
+
+/**first panel**/
 #topPanel{
    display: flex;
-   height: 100px;
+   height: 150px;
    width: auto;
-   background-color: rgb(23, 23, 23);
+   background-image: url(photos/pzRoAuA.jpg);
    justify-content: flex-start;
    position: sticky;
    top:0px; 
-   box-shadow: 0 0 10px 5px black;
+   box-shadow: 0 0 10px 5px rgb(44, 44, 44);
+   gap: 5px;
 }
 
+/** top Logo**/
 #homelink{
-    height: 100%;
+    height: 150px;
 }
 
 #logo{
     padding: 10px;
-    height: 100px;
+    height: 100%;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-    border-right: 2px solid yellow;
     transition: filter 0.3s ease;
 }
 
@@ -44,6 +53,7 @@ html {
     filter: drop-shadow(0 0 5px yellow);
 }
 
+/**top Searchbar**/
 #search{
     height: 50px;
     font-size: 20px;
@@ -53,6 +63,7 @@ html {
     background-color: rgb(10, 10, 10);
     border: 2px solid yellow;
     border-radius: 15px;
+    flex-grow: 1;
 }
 
 #search::placeholder{
@@ -60,85 +71,63 @@ html {
     text-align: center;
 }
 
+/**top rightside buttons**/
 #charactersDropdown{
-    border-left: 2px solid yellow;
     width: 200px;
+    flex-grow: 2;
 }
 
 #mediaDropdown{
     width: 200px;
     border-left: 2px solid yellow;
+    flex-grow: 2;
+}
+
+#characterButton,
+#mediaButton{
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: yellow;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
     border-right: 2px solid yellow;
 }
 
-#characterButton{
-    font-size: 30px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: rgb(23, 23, 23);
-    color: yellow;
-}
-
-#mediaButton{
-    font-size: 30px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: rgb(23, 23, 23);
-    color: yellow;
-}
-#characterOptions{
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    z-index: 1;
-}
-
-#characterOptions a {
-    color-scheme: yellow;
-    display: block;
-    text-decoration: none;
-}
-
-#charactersDropdown:hover #characterOptions{
-    display: block;
-    border-end-end-radius: 15px;
-    border-end-start-radius: 15px;
-}
-
-.dropdownCharacterOption{
-    color: yellow;
-    text-decoration:none;
-    font-size: 30px;
-    padding: 5px;
-}
-
-.dropdownCharacterOption:hover{
-    background-color: rgb(71, 71, 71);
-}
-
+#characterOptions,
 #mediaOptions{
     display: none;
     position: absolute;
     background-color: black;
-    min-width: 160px;
+    width: 100%;
     z-index: 1;
 }
 
+#characterOptions a,
 #mediaOptions a {
     color-scheme: yellow;
     display: block;
     text-decoration: none;
 }
 
+#charactersDropdown:hover #characterOptions,
 #mediaDropdown:hover #mediaOptions{
     display: block;
     border-end-end-radius: 15px;
     border-end-start-radius: 15px;
+    border: 2px solid yellow;
 }
 
+#characterButton:hover,
+#mediaButton:hover {
+    background-color: rgba(255, 247, 0, 0.522);
+    transition: background-color .5s;
+    color: black;
+}
+
+.dropdownCharacterOption,
 .dropdownMediaOption{
     color: yellow;
     text-decoration:none;
@@ -146,12 +135,76 @@ html {
     padding: 5px;
 }
 
+.dropdownCharacterOption:hover,
 .dropdownMediaOption:hover{
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(71, 71, 71);  
 }
 
-@media (max-width:800px){
+#charactersDropdown, #mediaDropdown {
+    position: relative;
+}
+
+#characterOptions a:last-child,
+#mediaOptions a:last-child {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/**2nd panel**/
+#infoPanel{
+   
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    background-color: black;
+
+}
+
+#profilePhoto{
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    border: 2px solid white;
+
+}
+
+#name{
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 70px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1500px){
     #search {
         width: 200px;
     }
+    #topPanel{
+        height: 100px;
+    }
+
+    #name{
+        font-size: 30px;
+    }
+
+    #characterButton{
+        font-size: 30px;
+    }
+
+    #mediaButton{
+        font-size: 30px;
+    }
 }
+
