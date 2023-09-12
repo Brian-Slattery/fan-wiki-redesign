@@ -36,9 +36,6 @@ body{
 }
 
 /** top Logo**/
-#homelink{
-    height: 150px;
-}
 
 #logo{
     padding: 10px;
@@ -156,7 +153,7 @@ body{
     width: 60%;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding: 50px;
     background-color: black;
@@ -166,6 +163,7 @@ body{
 #profilePhoto{
     display: block;
     margin: auto;
+    max-width: 100%;
     border-radius: 50px;
     border: 2px solid white;
 
@@ -180,9 +178,127 @@ body{
     text-align: center;
 }
 
+#infoContainer{
+    background-color: rgb(161, 161, 161);
+    border-radius: 15px;
+}
+/**Info Button Stuff**/
+#infoButtons{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    box-shadow: 0 0 10px 5px rgba(5, 5, 5, 0.564);
+}
 
+#infoButtonOne,#infoButtonTwo,#infoButtonThree{
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(83, 83, 83);
+    padding: 30px;
+    min-height: 50px;
+    max-width: 100%;
+    border: 2px solid white;
+    flex: 1;
+    margin: 0;
+}
 
+#infoButtonOne:hover,#infoButtonTwo:hover,#infoButtonThree:hover{
+    background-color: rgb(57, 57, 57);
+}
 
+#infoButtonOne{
+    border-top-left-radius: 10px;
+}
+
+#infoButtonThree{
+    border-top-right-radius: 10px;
+}
+
+/**the actual info**/
+#textAndPhoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/**text stuff**/
+#infoTxt{
+    display: flex;
+    flex-direction: row;
+    max-width: 66.7%;
+}
+
+/**Right side**/
+#catagories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid white;
+}
+
+#born,#homeWorld,#family{
+    font-size: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#homeWorld{
+    font-size: 30px;
+}
+
+#born,#homeWorld{
+    border-bottom: 2px solid white;
+}
+
+/**left side**/
+#answers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bornAnswer,#homeWorldAnswer{
+    font-size: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+#homeWorldAnswer{
+    font-size: 30px;
+}
+
+.familyMember{
+    font-size: 30px;
+    padding: 10px;
+}
+
+/**photo side**/
+
+#infoPhotoContainer{
+max-width: 33%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#infoPic{
+    display: flex;
+    display: inline-block;
+    max-width: 300px;
+}
 
 
 
@@ -205,6 +321,12 @@ body{
 
     #mediaButton{
         font-size: 30px;
+    }
+
+    #infoButtonOne,#infoButtonTwo,#infoButtonThree{
+        font-size: 15px;
+        padding: 5px;
+        align-items: center;
     }
 }
 
