@@ -148,7 +148,7 @@ body{
 }
 
 /**2nd panel**/
-#infoPanel{
+#MainContentContainer{
    
     width: 60%;
     margin: auto;
@@ -166,7 +166,6 @@ body{
     max-width: 100%;
     border-radius: 50px;
     border: 2px solid white;
-
 }
 
 #name{
@@ -251,7 +250,7 @@ body{
 }
 
 #homeWorld{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #born,#homeWorld{
@@ -277,7 +276,7 @@ body{
 }
 
 #homeWorldAnswer{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .familyMember{
@@ -286,7 +285,6 @@ body{
 }
 
 /**photo side**/
-
 #infoPhotoContainer{
 max-width: 33%;
 display: flex;
@@ -300,8 +298,116 @@ align-items: center;
     max-width: 300px;
 }
 
+#adContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+/**ad space**/
+#ad{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
 
+/**bio panel stuff**/
+#bioContainer {
+    background: 
+        linear-gradient(rgba(164, 164, 164, 0.5), rgba(164, 164, 164, 0.5)),
+        url(photos/testBackground.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/**bio button stuff**/
+#bioButtons{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    box-shadow: 0 0 10px 5px rgba(5, 5, 5, 0.564);
+}
+
+#bioButtonOne,#bioButtonTwo,#bioButtonThree{
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(83, 83, 83);
+    padding: 30px;
+    min-height: 50px;
+    max-width: 100%;
+    border: 2px solid white;
+    flex: 1;
+    margin: 0;
+}
+
+#bioButtonOne:hover,#bioButtonTwo:hover,#bioButtonThree:hover{
+    background-color: rgb(57, 57, 57);
+}
+
+#bioButtonOne{
+    border-top-left-radius: 10px;
+}
+
+#bioButtonThree{
+    border-top-right-radius: 10px;
+}
+
+/**bio Content Stuff**/
+#mainBioContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bioTitle{
+    padding-top: 10px;
+    max-width: 50%;
+    margin: 0;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#bioPageSwitcherAndNumber{
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.PreviousPage,.nextPage{
+    max-width: 70px;
+    display: block;
+}
+
+#bioPageNumber{
+    font-size: 30px;
+}
+
+#bioText{
+    padding: 15px;
+    text-align: center;
+
+}
+
+#bioText p{
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 700;
+
+}
 
 @media (max-width:1500px){
     #search {
@@ -327,6 +433,10 @@ align-items: center;
         font-size: 15px;
         padding: 5px;
         align-items: center;
+    }
+
+    #bioContainer{
+        background-position: center center;
     }
 }
 
