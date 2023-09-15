@@ -149,7 +149,6 @@ body{
 
 /**2nd panel**/
 #MainContentContainer{
-   
     width: 60%;
     margin: auto;
     display: flex;
@@ -163,7 +162,7 @@ body{
 #profilePhoto{
     display: block;
     margin: auto;
-    max-width: 100%;
+    width: 500px;
     border-radius: 50px;
     border: 2px solid white;
 }
@@ -247,10 +246,6 @@ body{
     justify-content: center;
     width: 100%;
     padding: 20px;
-}
-
-#homeWorld{
-    font-size: 40px;
 }
 
 #born,#homeWorld{
@@ -347,6 +342,7 @@ align-items: center;
     border: 2px solid white;
     flex: 1;
     margin: 0;
+    white-space: nowrap;
 }
 
 #bioButtonOne:hover,#bioButtonTwo:hover,#bioButtonThree:hover{
@@ -359,6 +355,63 @@ align-items: center;
 
 #bioButtonThree{
     border-top-right-radius: 10px;
+}
+
+/**bio dropdowns**/
+
+#bioDropdown,#personalityDropdown,#btsContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#bioOptions,
+#personalityOptions{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    z-index: 1;
+}
+
+#personalityOptions a,
+#bioOptions a {
+    color-scheme: yellow;
+    display: block;
+    text-decoration: none;
+}
+
+#bioDropdown:hover #bioOptions,
+#personalityDropdown:hover #personalityOptions{
+    display: block;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    border: 2px solid yellow;
+}
+
+#bioButton:hover,
+#personalityButton:hover {
+    background-color: rgba(255, 247, 0, 0.522);
+    transition: background-color .5s;
+    color: black;
+}
+
+.dropdownBioOptions,
+.dropdownPersonalityOptions{
+    color: yellow;
+    text-decoration:none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.dropdownBioOptions:hover,
+.dropdownPersonalityOptions:hover{
+    background-color: rgb(71, 71, 71);  
+}
+
+#bioOptions a:last-child,
+#personalityOptions a:last-child {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 /**bio Content Stuff**/
@@ -452,6 +505,7 @@ align-items: center;
     border-top-right-radius: 10px;
 }
 
+/**appearances nav page stuff**/
 #appearancesNavigationContainer{
     display: flex;
     margin: 0;
@@ -467,6 +521,7 @@ align-items: center;
     font-size: 30px;
 }
 
+/**media posters stuff**/
 #appearancesPostersContainer{
     display: flex;
     justify-content: center;
@@ -497,6 +552,10 @@ align-items: center;
         height: 100px;
     }
 
+    #MainContentContainer{
+        width: 100%;
+    }
+
     #name{
         font-size: 30px;
     }
@@ -510,13 +569,41 @@ align-items: center;
     }
 
     #infoButtonOne,#infoButtonTwo,#infoButtonThree{
-        font-size: 15px;
-        padding: 5px;
+        font-size: 20px;
+        min-height: 50px;
         align-items: center;
+    }
+
+    #bioButtonOne,#bioButtonTwo,#bioButtonThree{
+        font-size: 20px;
     }
 
     #bioContainer{
         background-position: center center;
     }
-}
 
+    #textAndPhoto{
+        flex-direction: column;
+    }
+
+    #infoTxt{
+        align-self: center;
+    }
+
+    #born,#homeWorld,#family{
+        font-size: 25px;
+    }
+
+    #bornAnswer,#homeWorldAnswer{
+        font-size: 25px;
+    }
+
+    #infoPhotoContainer{
+        align-self: center;
+        padding: 20px;
+    }
+
+    #name{
+        font-size: 70px;
+    }
+}
