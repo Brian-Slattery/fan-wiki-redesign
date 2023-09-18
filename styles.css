@@ -607,3 +607,67 @@ align-items: center;
         font-size: 70px;
     }
 }
+
+@media (max-width:600px){
+    #topPanel{
+        height: 100px;
+    }
+
+    #search{
+        display: none;
+    }
+
+    #profilePhoto{
+        width: 300px;
+    }
+
+    #characterButton,
+    #mediaButton{
+        font-size: 25px;
+    }
+
+    #infoContainer{
+        width: 100%;
+    }
+
+    #infoButtonOne,#infoButtonTwo,#infoButtonThree{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    #born,#homeWorld,#family{
+        font-size: 15px;
+        padding: 0%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #bornAnswer,#homeWorldAnswer{
+        font-size: 15px;
+        padding: 0%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .familyMember{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    #bioButtonOne,#bioButtonTwo,#bioButtonThree{
+        font-size: 15px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    #appearancesButton,#MentionedButton{
+        font-size: 20px;
+        padding: 15px;
+        align-items: center;
+    }
+
+
+
+
+
+}
