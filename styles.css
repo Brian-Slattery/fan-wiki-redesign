@@ -18,8 +18,8 @@ html {
 /**background**/
 body{
     background-image:url(/photos/wall.jpg);
+    background-attachment: fixed; 
     background-size:50%;
-
 }
 
 /**first panel**/
@@ -204,6 +204,10 @@ body{
     margin: 0;
 }
 
+#infoButtonTwo{
+    background-color: rgb(57, 57, 57);
+}
+
 #infoButtonOne:hover,#infoButtonTwo:hover,#infoButtonThree:hover{
     background-color: rgb(57, 57, 57);
 }
@@ -238,7 +242,7 @@ body{
     border-right: 2px solid white;
 }
 
-#born,#homeWorld,#family{
+#cat1,#cat2,#cat3,.Cats{
     font-size: 40px;
     margin: 0;
     display: flex;
@@ -246,9 +250,10 @@ body{
     justify-content: center;
     width: 100%;
     padding: 20px;
+    white-space: nowrap;
 }
 
-#born,#homeWorld{
+#cat1,#cat2,.Cats{
     border-bottom: 2px solid white;
 }
 
@@ -259,7 +264,7 @@ body{
     align-items: center;
 }
 
-#bornAnswer,#homeWorldAnswer{
+#bornAnswer,#homeWorldAnswer,.ans{
     font-size: 40px;
     margin: 0;
     display: flex;
@@ -268,11 +273,9 @@ body{
     width: 100%;
     padding: 20px;
     border-bottom: 2px solid white;
+    white-space: nowrap;
 }
 
-#homeWorldAnswer{
-    font-size: 40px;
-}
 
 .familyMember{
     font-size: 30px;
@@ -281,7 +284,7 @@ body{
 
 /**photo side**/
 #infoPhotoContainer{
-max-width: 33%;
+width: 33%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -590,11 +593,11 @@ align-items: center;
         align-self: center;
     }
 
-    #born,#homeWorld,#family{
+    #cat1,#cat2,#cat3,.Cats{
         font-size: 25px;
     }
 
-    #bornAnswer,#homeWorldAnswer{
+    #bornAnswer,#homeWorldAnswer,.ans{
         font-size: 25px;
     }
 
@@ -635,14 +638,14 @@ align-items: center;
         padding: 0px;
     }
 
-    #born,#homeWorld,#family{
+    #cat1,#cat2,#cat3,.Cats{
         font-size: 15px;
         padding: 0%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    #bornAnswer,#homeWorldAnswer{
+    #bornAnswer,#homeWorldAnswer,.ans{
         font-size: 15px;
         padding: 0%;
         padding-top: 10px;
@@ -666,8 +669,9 @@ align-items: center;
         align-items: center;
     }
 
-
-
-
+    #infoPic{
+        max-width: 200px;
+    }
 
 }
+

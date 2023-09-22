@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Admiral Thrawn</title>
+    <link rel="icon" sizes="32x32" href="photos/logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <script src="scripts.js"></script>
 
     <div id="topPanel">
         <a href="" id="homeLink">
             <img src="photos/logo.png" id="logo" alt="Deathstar Logo">
         </a>
 
-        <input type="search" id="search" placeholder="A long time ago, in a galexy far, far away...">
+        <input type="search" id="search" placeholder="">
 
         <div id="charactersDropdown">
             <p id="characterButton">Characters</p>
@@ -54,19 +57,53 @@
             </div>
             <div id="textAndPhoto">
                 <div id="infoTxt">
+
                     <div id="catagories">
-                        <p id="born">Born:</p>
-                        <p id="homeWorld">Homeworld:</p>
-                        <p id="family">Family:</p>
+                        
+                        <div id="backgroundCats">
+                            <p id="cat1">Born</p>
+                            <p id="cat2">Homeworld</p>
+                            <p id="cat3">Family</p>
+                        </div>
+
+                        <div id="apperanceCats">
+                            <div class="Cats">Species</div>
+                            <div class="Cats">Skin color</div>
+                            <div class="Cats">Eye color</div>
+                            <div class="Cats">Hair color</div>
+                            <div class="Cats">Height</div>
+                            <div class="Cats">Gender</div>
+                        </div>
+
                     </div>
                     <div id="answers">
-                        <p id="bornAnswer">59 bby</p>
-                        <p id="homeWorldAnswer">Csilla</p>
-                        <ul id="familyList">
-                            <li class="familyMember">Thrass (brother)</li>
-                            <li class="familyMember">The Mitth family (Adopted)</li>
-                            <li class="familyMember">blood family (Biological)</li>
-                        </ul>
+
+                        <div id="backgroundAnswers">
+                            <p id="bornAnswer">59 bby</p>
+                            <p id="homeWorldAnswer">Csilla</p>
+                            <ul id="familyList">
+                                <li class="familyMember">Thrass (brother)</li>
+                                <li class="familyMember">The Mitth family (Adopted)</li>
+                                <li class="familyMember">blood family (Biological)</li>
+                            </ul>
+                        </div>   
+                        
+                        <div id="apperanceAnswers">
+                            <p class="ans">Chiss</p>
+                            <p class="ans">Blue</p>
+                            <p class="ans">Glowing Red</p>
+                            <p class="ans">Black</p>
+                            <p class="ans">5'9</p>
+                            <p class="ans">Male</p>
+                        </div>
+                        
+                        <div id="affiliationAnswers">
+                            <p class="ans">Chiss Ascendancy</p>
+                            <p class="ans">Galactic Empire</p>
+                            <p class="ans">Empire of the Hand</p>
+                            <p class="ans">Thrawn's Confederation</p>
+                        </div>
+
                     </div>
                 </div>
                 <div id="infoPhotoContainer">
