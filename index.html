@@ -11,36 +11,38 @@
 
     <script src="scripts.js"></script>
 
-    <div id="topPanel">
-        <a href="" id="homeLink">
-            <img src="photos/logo.png" id="logo" alt="Deathstar Logo">
-        </a>
+    <div id="topNonflexContainer">
+        <div id="topPanel">
+            <a href="" id="homeLink">
+                <img src="photos/logo.png" id="logo" alt="Deathstar Logo">
+            </a>
 
-        <input type="search" id="search" placeholder="">
+            <input type="search" id="search" placeholder="">
 
-        <div id="charactersDropdown">
-            <p id="characterButton">Characters</p>
-            <div id="characterOptions">
-                <a href="" class="dropdownCharacterOption">Jedi</a>
-                <a href="" class="dropdownCharacterOption">Sith</a>
-                <a href="" class="dropdownCharacterOption">Empire</a>
-                <a href="" class="dropdownCharacterOption">Rebel</a>
-                <a href="" class="dropdownCharacterOption">Republic</a>
-                <a href="" class="dropdownCharacterOption">CIS</a>
-                <a href="" class="dropdownCharacterOption">Other</a>
+            <div id="charactersDropdown">
+                <p id="characterButton">Characters</p>
+                <div id="characterOptions">
+                    <a href="" class="dropdownCharacterOption">Jedi</a>
+                    <a href="" class="dropdownCharacterOption">Sith</a>
+                    <a href="" class="dropdownCharacterOption">Empire</a>
+                    <a href="" class="dropdownCharacterOption">Rebel</a>
+                    <a href="" class="dropdownCharacterOption">Republic</a>
+                    <a href="" class="dropdownCharacterOption">CIS</a>
+                    <a href="" class="dropdownCharacterOption">Other</a>
+                </div>
+            </div>
+            <div id="mediaDropdown">
+                <p id="mediaButton">Media</p>
+                <div id="mediaOptions">
+                    <a href="" class="dropdownMediaOption">Movies</a>
+                    <a href="" class="dropdownMediaOption">Shows</a>
+                    <a href="" class="dropdownMediaOption">Books</a>
+                    <a href="" class="dropdownMediaOption">Games</a>
+                    <a href="" class="dropdownMediaOption">Comics</a>
+                </div>
             </div>
         </div>
-        <div id="mediaDropdown">
-            <p id="mediaButton">Media</p>
-            <div id="mediaOptions">
-                <a href="" class="dropdownMediaOption">Movies</a>
-                <a href="" class="dropdownMediaOption">Shows</a>
-                <a href="" class="dropdownMediaOption">Books</a>
-                <a href="" class="dropdownMediaOption">Games</a>
-                <a href="" class="dropdownMediaOption">Comics</a>
-            </div>
-        </div>
-
+        <input type="search" id="search2" placeholder="">
     </div>
 
     <div id="MainContentContainer">
@@ -124,10 +126,10 @@
             <div id="personalityDropdown">
                 <p id="bioButtonOne">Personality</p>
                 <div id="personalityOptions">
-                    <a href="" class="dropdownPersonalityOptions">Command Style</a>
-                    <a href="" class="dropdownPersonalityOptions">Technique</a>
-                    <a href="" class="dropdownPersonalityOptions">Political Views</a>
-                    <a href="" class="dropdownPersonalityOptions">Legacy</a>
+                    <p class="dropdownPersonalityOptions">Command Style</p>
+                    <p class="dropdownPersonalityOptions">Technique</p>
+                    <p class="dropdownPersonalityOptions">Political Views</p>
+                    <p id="legacyButton" class="dropdownPersonalityOptions">Legacy</p>
                 </div>
 
                 </div>
@@ -135,10 +137,10 @@
                 <div id="bioDropdown">
                 <p id="bioButtonTwo">Biography</p>
                 <div id="bioOptions">
-                    <a href="" class="dropdownBioOptions">Origins</a>
-                    <a href="" class="dropdownBioOptions">Imperial Service</a>
-                    <a href="" class="dropdownBioOptions">Counter-Insurgency</a>
-                    <a href="" class="dropdownBioOptions">Heir To The Empire</a>
+                    <p id="originsButton" class="dropdownBioOptions">Origins</p>
+                    <p class="dropdownBioOptions">Imperial Service</p>
+                    <p class="dropdownBioOptions">Counter-Insurgency</p>
+                    <p class="dropdownBioOptions">Heir To The Empire</p>
                 </div>
 
                 </div>
@@ -152,18 +154,14 @@
             </div>
 
             <div id="mainBioContent">
-                <h2 id="bioTitle">Section Title</h2>
+                <h2 id="bioTitle">Origins</h2>
                     <div id="bioPageSwitcherAndNumber">
-                        <img src="photos/csilla.png" alt="" class="PreviousPage">
+                        <img src="photos/csilla.png" alt="" id="bioPreviousPage" class="PreviousPage">
                         <p id="bioPageNumber">1</p>
-                        <img src="photos/logo.png" alt="" class="nextPage">
+                        <img src="photos/logo.png" alt="" id="bioNextPage" class="nextPage">
                     </div>
                     <div id="bioText">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores ea ratione dolore facilis quia. Soluta quod earum veritatis nihil explicabo voluptates eum. Facilis omnis error, quibusdam aliquid modi nisi.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores ea ratione dolore facilis quia. Soluta quod earum veritatis nihil explicabo voluptates eum. Facilis omnis error, quibusdam aliquid modi nisi. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores ea ratione dolore facilis quia. Soluta quod earum veritatis nihil explicabo voluptates eum. Facilis omnis error, quibusdam aliquid modi nisi. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores ea ratione dolore facilis quia. Soluta quod earum veritatis nihil explicabo voluptates eum. Facilis omnis error, quibusdam aliquid modi nisi. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores ea ratione dolore facilis quia. Soluta quod earum veritatis nihil explicabo voluptates eum. Facilis omnis error, quibusdam aliquid modi nisi.</p>
+                       
                     </div>
                 
             </div>
