@@ -378,7 +378,7 @@ align-items: center;
     border: 2px solid white;
     flex: 1;
     margin: 0;
-    white-space: nowrap;
+    white-space:nowrap;
 }
 
 #bioButtonOne:hover,#bioButtonTwo:hover,#bioButtonThree:hover{
@@ -536,45 +536,38 @@ align-items: center;
 
 #appearancesButton{
     border-top-left-radius: 10px;
+    background-color: rgb(57, 57, 57);
 }
 
 #MentionedButton{
     border-top-right-radius: 10px;
 }
 
-/**appearances nav page stuff**/
-#appearancesNavigationContainer{
-    display: flex;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#appearancePageNumber{
-    font-size: 30px;
-}
-
 /**media posters stuff**/
 #appearancesPostersContainer{
+    margin: 0%;
+    padding: 30px;
+    padding-top: 30px;
+}
+
+#appearances,#mentions{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0%;
     gap: 30px;
-    padding: 30px;
-    padding-top: 0%;
+
 }
 
-#posterOne,#posterTwo,#posterThree{
+#mentions{
+    display: none;
+}
+
+.poster{
     width: 250px;
     height: 400px;
 }
 
-#posterOne:hover,#posterTwo:hover,#posterThree:hover{
+.poster:hover{
     width: 300px;
     height: auto;
     box-shadow: 0 0 15px rgb(0, 0, 0);
